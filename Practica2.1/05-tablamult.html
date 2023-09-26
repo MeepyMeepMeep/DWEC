@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05 TablaMultiplicar  Kinga Katarzyna Czernikowska</title>
+</head>
+<body>
+    <script>
+        //Pedimos el número al usuarii
+        const numero = prompt("Introduce un número a multiplicar: ").trim();
+        
+        //Comprobamos si es un número y si es mayor o igual a 0
+        if (!isNaN(numero)&&numero>=0) {
+            //Describimos lo que se va a mostrar en la consola
+            console.log(`Tabla de multiplicar de ${multiplicado}`);
+            //Inicializamos variable auxiliar
+            let n=0;
+            //Realizamos los cálculos
+            while (n<=10){
+                //Mostramos el resultado por consola
+                console.log(`${multiplicado}x${n}=${n*multiplicado}`);
+                //Aumentamos la variable auxiliar en 1
+                n++;
+            }
+            //Si lo introducido por el usuario no es un número, no procedemos y mostramos un mensaje de error
+        } else {
+            console.log("No se puede proceder, no es un numero.");
+        }
+
+
+    </script>
+</body>
+</html>

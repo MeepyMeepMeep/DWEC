@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 EsPar Kinga Katarzyna Czernikowska</title>
+</head>
+
+<body>
+
+    <script>
+        //Pedimos al usuario un número
+        const num = prompt("Introduzca un número: ");
+
+        //Comprobamos si la variable es numérica
+        if (!isNaN(num)) {
+            //Comprobamos si es par o no
+            resultado= num % 2 == 0 ? console.log("Es par."):console.log("Es impar.");
+        //Si no es numérica, mostramos mensaje de error
+        } else {
+            console.log("No se puede proceder, no es un numero.");
+        }
+    </script>
+
+</body>
+
+</html>

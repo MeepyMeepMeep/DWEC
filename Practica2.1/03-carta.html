@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03 Carta  Kinga Katarzyna Czernikowska</title>
+</head>
+<body>
+    
+    <script>
+
+    //Pedimos al usuario que introduzca todos los datos
+    const nombre= prompt("Introduzca su nombre: ").trim();
+    const curso = prompt("Introduzca el curso: ").trim();
+    const localidad = prompt("Introduzca la localidad: ").trim();
+    const fechaInicio = prompt("Introduzca la fecha de inicio: ").trim();
+    const fechaFin = prompt("Introduzca la fecha de fin: ").trim();
+
+    //Guardamos el mensaje en una variable y definimos los campos a modificar por als variables
+    let carta=`Estimado ${nombre},\n`+
+        `Bienvenido al curso de ${curso} que se celebrará en la localidad de ${localidad} entre las fechas ${fechaInicio}\n`+
+        `y ${fechaFin}. Espero que el curso se desarrolle según sus expectativas. Estaremos encantados de atenderle\n` +
+        `Atentamente,\n`+
+        `La dirección.`;
+    //Mostramos el mensaje por consola
+    console.log(carta);
+    </script>
+    
+
+
+
+</body>
+</html>
