@@ -7,8 +7,11 @@
     <title>02 HastaMayorDeEdad  Kinga Katarzyna Czernikowska</title>
 </head>
 <body>
+    <div id='ofage'>
+    </div>
 
     <script>
+        const contenido= document.getElementById("ofage");
         //Pedimos al usuario su edad
         const promptedad = prompt("Introduce tu edad: ");
 
@@ -16,14 +19,15 @@
          if (!isNaN(promptedad)) {
             //Comprobamos si la edad es mayor de edad y mostramos el contenido, en caso
             //contrario, mostramso un mensaje de error
-            promptedad>=18 ? console.log("LA COMIDA MAS GUARRA QUE HAYAS PROBADO, " +
-             "AHORA A 200M DE TU CASA"):console.log("Edad demasiado baja. Vuelve cuando seas mayor.");
+            promptedad>=18 ? contenido.innerHTML='<h1>¡Hola!</h1>':contenido.innerHTML=null;
         //Si no lo es, mostramos mensaje de error
         } else {
             console.log("No se puede proceder, no es un numero.");
         }
 
     </script>
+
+    
     
 </body>
 </html>

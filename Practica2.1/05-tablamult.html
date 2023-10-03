@@ -7,20 +7,30 @@
     <title>05 TablaMultiplicar  Kinga Katarzyna Czernikowska</title>
 </head>
 <body>
+
+    <ul id="tabla-mult">
+
+    </ul>
+
     <script>
+
+        const ul= document.getElementById("tabla-mult");
+        
         //Pedimos el número al usuarii
         const numero = prompt("Introduce un número a multiplicar: ").trim();
         
         //Comprobamos si es un número y si es mayor o igual a 0
         if (!isNaN(numero)&&numero>=0) {
             //Describimos lo que se va a mostrar en la consola
-            console.log(`Tabla de multiplicar de ${multiplicado}`);
+            console.log(`Tabla de multiplicar de ${numero}`);
             //Inicializamos variable auxiliar
             let n=0;
             //Realizamos los cálculos
             while (n<=10){
                 //Mostramos el resultado por consola
-                console.log(`${multiplicado}x${n}=${n*multiplicado}`);
+                console.log(`${numero}x${n}=${n*numero}`);
+                ul.innerHTML+= `${numero}x${n}=${n*numero}`;
+                //ul.innerHTML+= ul.innerHTML + `${numero}x${n}=${n*numero}`;
                 //Aumentamos la variable auxiliar en 1
                 n++;
             }
